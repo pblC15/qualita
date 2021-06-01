@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style type="text/css">
+        #google_translate_element {
+            display: none;
+        }
+        
+        .goog-te-banner-frame {
+            display: none !important;
+        }
+        
+        body {
+            position: static !important;
+            top: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Translate-->
+    <div id="google_translate_element" class="boxTradutor">
+
+    </div>
+    <a href="javascript:trocarIdioma('en')"><img alt="ingles" class="icon-english" src="https://astronautgames.space/images/en.png"></a>
+    <a href="javascript:trocarIdioma('es')"><img alt="espanhol" class="icon-spanish" src="https://astronautgames.space/images/es.png"></a>
+    <a href="javascript:trocarIdioma('pt')"><img alt="portugues" class="icon-portuguese" src="https://astronautgames.space/images/pt-br.png"></a>
+    <!--End Translate-->
+    <header>
+        <div class="sub-header">
+            <div class="container">
+
+                <div class="box-logo">
+                    <a href="index.html"><img src="imgs/logo/LOGO.png" alt="Logo Tipo Qualitá" title="Logo Tipo Qualitá"></a>
+                </div>
+                <nav class="box-menu">
+                    <button class="btn-mobile">
+                        <span class="hamburger"></span>
+                    </button>
+                    <ul class="menu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">PRODUTO</a></li>
+                        <li><a href="#">SOBRE</a></li>
+                        <li><a href="#">EVENTOS</a></li>
+                        <li><a href="#">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+        </div>
+        <div class="header-message">
+            <h1>Uma Coleita Sustentável</h1>
+            <p>Para a melhor qualidade de nossa erva maté!</p>
+        </div>
+    </header>
+    <main>
+        <section class="content-previu">
+            <div class="container">
+                <article class="content-previu-text">
+                    <h1>Cultivo</h1>
+                    <p>A erva-mate é uma planta que pode resistir a uma diversidade de situações naturais, porém, para uma colheita com qualidade e quantidade satisfatória, existem algumas observações muito importantes que são implementadas pelos agricultores.</p>
+                </article>
+                <div class="content-previu-box">
+                    <div class="box-img">
+                        <img src="imgs/banner/banner1.jpeg">
+                    </div>
+                    <article>
+                        <p>Costuma-se cultivar inicialmente em local protegido, tais quais os viveiros, onde, uma vez plantada, a semente possa se desenvolver sob a proteção de um ambiente mais controlado até o ponto em que se torne uma muda mais resistente
+                            e pronta para ser levada a campo.
+                        </p>
+                    </article>
+                </div>
+                <div class="content-previu-box">
+                    <div class="box-img">
+                        <img src="imgs/banner/banner4.jpeg">
+                    </div>
+                    <article>
+                        <p>Uma vez no campo, o plantio é feito em covas, preparadas com adubo orgânico para receberem as mudas, que são colocadas ordenadamente, com um espaçamento próprio, determinado pela área, sistema de produção e recursos. Durante o
+                            amadurecimento da planta, vários cuidados são necessários, tais quais: prevenção contra plantas competidoras que possam prejudicar o crescimento da erva, muitas vezes combatidas com a cobertura do solo; poda controlada das
+                            plantas para evitar o crescimento em sentido indesejado; observação do surgimento de doenças que podem causar uma perda de produção se não remediadas e o combate de ocasionais pragas que possam danificar as plantas..</p>
+                    </article>
+                </div>
+                <div class="content-previu-box">
+                    <div class="box-img">
+                        <img src="imgs/banner/banner2.jpeg">
+                    </div>
+                    <article>
+                        <p>Costuma-se cultivar inicialmente em local protegido, tais quais os viveiros, onde, uma vez plantada, a semente possa se desenvolver sob a proteção de um ambiente mais controlado até o ponto em que se torne uma muda mais resistente
+                            e pronta para ser levada a campo.
+                        </p>
+                    </article>
+                </div>
+                <div class="content-previu-box">
+                    <div class="box-img">
+                        <img src="imgs/banner/banner3.jpeg">
+                    </div>
+                    <article>
+                        <p>Durante a colheita também são levados em consideração alguns métodos apropriados para a melhor retirada e transporte da planta. Realizada manualmente, com facões, ou através de tratores, a colheita se baseia na retirada dos ramos
+                            enfolhados da planta para a posterior produção nas indústrias da erva encontrada nos comércios. Normalmente, para a produção da erva-mate para chimarrão ou tereré, as partes colhidas são postas sobre uma lona ou “poncho”, para
+                            que as folhas não tenham contato direto com o solo ou outras impurezas, e, posteriormente, transportadas para a indústria onde passam por processos de preparação, tais quais, o sapeco, a secagem, a moagem, o peneiramento e
+                            a tostagem, variando, é claro, de acordo com a destinação pretendida.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/scriptJs.js"></script>
+    <script type="text/javascript">
+        var comboGoogleTradutor = null; //Varialvel global
+
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,es,pt',
+                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+            }, 'google_translate_element');
+
+            comboGoogleTradutor = document.getElementById("google_translate_element").querySelector(".goog-te-combo");
+        }
+
+        function changeEvent(el) {
+            if (el.fireEvent) {
+                el.fireEvent('onchange');
+            } else {
+                var evObj = document.createEvent("HTMLEvents");
+
+                evObj.initEvent("change", false, true);
+                el.dispatchEvent(evObj);
+            }
+        }
+
+        function trocarIdioma(sigla) {
+            if (comboGoogleTradutor) {
+                comboGoogleTradutor.value = sigla;
+                changeEvent(comboGoogleTradutor); //Dispara a troca
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>
