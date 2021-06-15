@@ -409,6 +409,67 @@ footer .container .footer-logo img {
 /*MEDIA QUERY*/
 
 
+/*1300px*/
+
+@media (max-width: 81em) {}
+
+
+/*900px*/
+
+@media (max-width:56em) {
+    .content-certification {
+        background-size: contain;
+        height: 300px;
+    }
+    .content-certification .container h1 {
+        color: transparent;
+    }
+    .wrap2 {
+        background-color: transparent;
+    }
+    footer .container {
+        flex-direction: column;
+    }
+    footer .container .footer-logo {
+        margin: 0 auto;
+    }
+    footer .footer-address {
+        padding: 50px;
+        text-align: center;
+    }
+    .footer-social {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .icon-instagram::before,
+    .icon-facebook::before,
+    .icon-twitter::before,
+    .icon-linkedin:before,
+    .icon-mail2::before {
+        margin-right: 3px !important;
+    }
+    .footer-social p {
+        /* margin-right: 25px; */
+    }
+    footer .footer-menu {
+        max-width: 100%;
+        margin: 30px auto;
+    }
+    footer .footer-menu ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    .footer-sub p:nth-of-type(2) {
+        margin-right: 50px;
+    }
+}
+
+
 /*840px*/
 
 @media (max-width: 52em) {
@@ -501,6 +562,23 @@ footer .container .footer-logo img {
     .content-previu-box article p {
         font-size: 0.9em;
     }
+    .footer-sub {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-social {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+    footer .footer-address {
+        padding: 30px 2%;
+        width: 100%;
+    }
+    .footer-sub p:nth-of-type(2) {
+        margin-right: 0px !important;
+        margin-top: 10px;
+    }
     /*520px*/
     @media (max-width: 33em) {
         header {
@@ -539,11 +617,19 @@ footer .container .footer-logo img {
             border-radius: 20px 20px 20px 20px;
             margin-top: 8px;
         }
+        .content-certification {
+            background-size: contain;
+            height: 200px;
+        }
     }
     /*360px*/
     @media (max-width: 23em) {
         .content-wrap .wrap {
             width: 300px;
+        }
+        .content-certification {
+            background-size: contain;
+            height: 300px;
         }
     }
     /*320px*/
