@@ -292,7 +292,7 @@ img {
 
 .box-carrosel {
     width: 900px;
-    margin: 50px auto;
+    margin: 20px auto 50px;
     position: relative;
     padding: 10px 30px;
     background-color: #fff;
@@ -337,7 +337,7 @@ img {
 .carrosel .item {
     float: left;
     width: 173px;
-    height: 250px;
+    height: 210px;
     padding: 10px;
     margin-right: 12px;
     background-color: #ccc;
@@ -364,6 +364,21 @@ img {
 }
 
 .content-previu-text {
+    text-align: center;
+}
+
+.galery-wrap {
+    margin: 50px 0;
+}
+
+.galery-wrap h1 {
+    font-weight: 300;
+    width: 130px;
+    margin: 12px auto !important;
+    background-color: #FFF;
+    z-index: 99999;
+    position: relative;
+    color: #3d3d3d;
     text-align: center;
 }
 
@@ -508,7 +523,7 @@ img {
 /*FOOTER*/
 
 footer {
-    background-color: #f2f2f2;
+    background-color: #FFF;
     padding: 50px 2%;
 }
 
