@@ -240,7 +240,7 @@ header.header-products {
 }
 
 .box-products:nth-child(odd) {
-    flex-direction: row-reverse;
+    flex-direction: rown-reverse;
 }
 
 .box-products:nth-child(even) {
@@ -249,7 +249,7 @@ header.header-products {
 
 .products-desc .box-products {
     display: flex;
-    height: 250px;
+    height: 95%;
     width: 95%;
     margin: 20px 0;
 }
@@ -362,6 +362,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 50%;
+    border-radius: 0 0 150px 150px;
 }
 
 .header-message-contact {
@@ -405,6 +406,7 @@ img {
 
 .content-form .container {
     display: flex;
+    flex-direction: row;
 }
 
 .content-form .container .data-contact {
@@ -763,6 +765,15 @@ footer .container .footer-logo img {
     .content-certification .container h1 {
         color: transparent;
     }
+    /*PRODUCT*/
+    header.header-products,
+    header.header-home {
+        background-size: 100% 100%;
+        border-radius: 0 0 50px 50px;
+    }
+    .box-carrosel {
+        width: 90%;
+    }
     .wrap2 {
         background-color: transparent;
     }
@@ -791,7 +802,7 @@ footer .container .footer-logo img {
         margin-right: 3px !important;
     }
     .footer-social p {
-        /* margin-right: 25px; */
+        margin-right: 25px;
     }
     footer .footer-menu {
         max-width: 100%;
@@ -897,7 +908,55 @@ footer .container .footer-logo img {
     .menu li a:hover {
         background-color: rgba(0, 0, 0, .05);
     }
-    /*ARTICLES*/
+    /*PRODUCT*/
+    .box-products:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+    .box-products:nth-child(even) {
+        float: none;
+        flex-direction: column-reverse;
+    }
+    .products-desc .box-products {
+        width: 100%;
+        height: auto;
+    }
+    .box-products article {
+        flex-basis: 100%;
+        padding: 50px 10px;
+        text-align: center;
+    }
+    .box-products article h1 {
+        font-size: 2em;
+    }
+    .box-products article p {
+        font-size: 1.2em;
+        text-align: justify;
+    }
+    .box-products .product-img {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .box-products img {
+        width: 80%;
+        height: 100%;
+    }
+    /*CONTACT*/
+    .header-contact {
+        background-size: 100% 100%;
+        border-radius: 0 0 50px 50px;
+        margin-bottom: 20px;
+    }
+    .content-form .container {
+        flex-direction: column;
+    }
+    .content-form .container form {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .footer-contact {
+        height: 300px;
+    }
+    /*ARTICLES HOME*/
     .content-previu-box article p {
         font-size: 0.9em;
     }
@@ -920,9 +979,6 @@ footer .container .footer-logo img {
     }
     /*520px*/
     @media (max-width: 33em) {
-        header.header-home {
-            border-radius: 0 0 100px 100px;
-        }
         .header-message {
             margin: 0px auto;
         }
@@ -941,6 +997,7 @@ footer .container .footer-logo img {
         }
         .content-previu-box {
             flex-direction: column !important;
+            padding: 0 2%;
         }
         .content-previu-box:nth-of-type(2) article,
         .content-previu-box:nth-of-type(4) article {
@@ -957,8 +1014,41 @@ footer .container .footer-logo img {
             margin-top: 8px;
         }
         .content-certification {
-            background-size: contain;
+            background-size: 100% 100%;
             height: 200px;
+        }
+        /*PRODUCT*/
+        header.header-products {
+            margin-bottom: 30px;
+        }
+        .header-message-contact {
+            margin: 0px auto;
+        }
+        .contact-product .contact-title {
+            width: 100%;
+            padding: 0 2%;
+            margin: 0px auto 50px auto;
+            text-align: center;
+        }
+        .products-desc {
+            padding: 0 2%;
+        }
+        .box-products article p {
+            font-size: 1em;
+            text-align: justify;
+        }
+        .content-wrap {
+            margin: 20px 0;
+        }
+        .header-message-product {
+            margin: 0px auto;
+            padding: 20px 0;
+        }
+        footer .footer-address {
+            text-align: justify;
+        }
+        .footer-sub p {
+            text-align: left;
         }
     }
     /*360px*/
@@ -967,7 +1057,6 @@ footer .container .footer-logo img {
             width: 300px;
         }
         .content-certification {
-            background-size: contain;
             height: 200px;
             background-color: #f2f2f2;
         }

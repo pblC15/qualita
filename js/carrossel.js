@@ -4,7 +4,7 @@ $(function() {
     $(".carrosel").css("width", width);
 
 
-    var numImages = 2;
+    var numImages = 1;
     var MarginPadding = 30;
 
     var ident = 0;
