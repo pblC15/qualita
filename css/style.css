@@ -780,7 +780,7 @@ form p {
 .btn-play {
     width: 100%;
     height: 100%;
-    margin: 30px 0;
+    margin: 15px 0;
 }
 
 .btn-play a {
@@ -1176,6 +1176,7 @@ footer .container .footer-logo img {
     .content-resAbout-video .resAbout-text h1 {
         width: 100%;
         font-size: 2.6em;
+        height: 260px;
     }
     .content-resAbout-video .container .resAbout-text,
     .content-resAbout-product .container .resAbout-text,
@@ -1194,6 +1195,7 @@ footer .container .footer-logo img {
     .content-resAbout-product,
     .content-resAbout {
         background-position: 52% center;
+        height: 660px;
     }
     /*520px*/
     @media (max-width: 33em) {
@@ -1224,12 +1226,8 @@ footer .container .footer-logo img {
             border-right: 2px solid #BFA084 !important;
         }
         .content-previu-box article {
-            border-top: 2px solid #BFA084;
-            border-right: 2px solid #BFA084;
-            border-bottom: 2px solid #BFA084;
-            border-left: 2px solid #BFA084;
-            border-radius: 20px 20px 20px 20px;
-            margin-top: 8px;
+            border-top: none;
+            border-left: 2px solid #145238;
         }
         .content-certification {
             background-size: 100% 100%;
@@ -1285,10 +1283,14 @@ footer .container .footer-logo img {
             width: 95%;
             margin: 50px auto;
         }
-        .content-resAbout-contact .container h1 {
+        .content-resAbout-contact .container h1,
+        .content-resAbout-product .resAbout-text h1 {
             width: 100%;
             height: 280px;
             font-size: 2.5em;
+        }
+        .content-resAbout-contact {
+            background-position: 82% center;
         }
     }
     /*320px*/
