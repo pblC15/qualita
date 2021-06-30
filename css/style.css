@@ -669,10 +669,13 @@ form p {
 
 .content-resAbout-contact {
     width: 100%;
-    border: 2px outset #145238;
     padding: 30px 2%;
     height: 500px;
     width: 100%;
+    background-image: url("../imgs/banner/contato.jpg");
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .content-resAbout-contact .container h1 {
@@ -681,8 +684,8 @@ form p {
     margin: 50px auto 0 auto;
     text-align: center;
     width: 650px;
-    color: #222;
-    text-shadow: 1px 1px 1px #ccc;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #222;
 }
 
 
@@ -809,12 +812,13 @@ form p {
     margin: 0 auto;
     width: 150px;
     color: #000;
+    text-transform: uppercase;
 }
 
 .btn2:hover {
     background-color: #145238;
     color: #FFF;
-    border: 2px solid #FFF;
+    border: 3px solid #FFF;
     padding: 16px 16px 15px 16px;
 }
 
@@ -832,18 +836,19 @@ form p {
 
 .content-certification .container h1 {
     padding-top: 50px;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #FFF;
     text-align: center;
     position: relative;
     z-index: 99999;
+    text-transform: uppercase;
 }
 
 .wrap2 {
     width: 250px;
-    height: 4px;
+    height: 3px;
     position: relative;
-    top: -9px;
+    top: -5px;
     margin: 0 auto;
     background-color: #FFF;
 }
