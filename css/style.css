@@ -81,11 +81,10 @@
 header.header-home {
     height: 100vh;
     width: 100%;
-    background-image: url("../imgs/banner/banner17.jpeg");
+    background-image: url("../imgs/banner/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 100%;
-    border-radius: 0 0 150px 150px;
 }
 
 .sub-header {
@@ -164,7 +163,7 @@ header.header-home .container,
     width: 100%;
     max-width: 600px;
     background-color: rgba(180, 180, 180, 0.5);
-    margin: 120px auto;
+    margin: 150px auto 0 auto;
     text-align: center;
     font-family: "Poppins-SemiBold";
     padding: 40px 0;
@@ -187,7 +186,7 @@ header.header-home .container,
 header.header-products {
     height: 100vh;
     width: 100%;
-    background-image: url("../imgs/banner/post7.jpeg");
+    background-image: url("../imgs/banner/banner17.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 50%;
@@ -360,11 +359,11 @@ img {
 header.header-company {
     height: 100vh;
     width: 100%;
-    background-image: url("../imgs/banner/post1.jpeg");
+    background-image: url("../imgs/banner/banner20.jpeg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: 100% 50%;
-    border-radius: 0 0 150px 150px;
+    border-radius: 0 0 50px 50px;
 }
 
 .contact-company {
@@ -422,7 +421,7 @@ header.header-company {
 .header-contact {
     height: 100vh;
     width: 100%;
-    background-image: url("../imgs/banner/banner7.jpeg");
+    background-image: url("../imgs/banner/banner20.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 50%;
@@ -614,7 +613,7 @@ form p {
     position: relative;
     top: -35px;
     margin: 0 auto;
-    background-color: #BFA084;
+    background-color: #145238;
 }
 
 .content-previu-text p {
@@ -640,10 +639,9 @@ form p {
 
 .content-previu-box article {
     flex-basis: 70%;
-    border-top: 2px solid #BFA084;
-    border-right: 2px solid #BFA084;
-    border-bottom: 2px solid #BFA084;
-    border-radius: 0 20px 20px 0;
+    border-top: 2px solid #145238;
+    border-right: 2px solid #145238;
+    border-bottom: 2px solid #145238;
     padding: 20px;
     text-align: justify;
     color: #3d3d3d;
@@ -667,41 +665,157 @@ form p {
 }
 
 
+/*CONTATO*/
+
+.content-resAbout-contact {
+    width: 100%;
+    border: 2px outset #145238;
+    padding: 30px 2%;
+    height: 500px;
+    width: 100%;
+}
+
+.content-resAbout-contact .container h1 {
+    font-size: 3em;
+    height: 200px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    width: 650px;
+    color: #222;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+
 /*resAbout*/
 
 .content-resAbout {
     background-color: #f2f2f2;
     padding: 30px 2%;
+    background-image: url("../imgs/banner/qualyta-10.jpg");
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
 }
 
-.content-resAbout .container {
+.content-resAbout-product {
+    background-color: #f2f2f2;
+    padding: 30px 2%;
+    background-image: url("../imgs/banner/edit1.jpg");
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+.content-resAbout-video {
+    background-color: #f2f2f2;
+    padding: 30px 2%;
+    background-image: url("../imgs/banner/edit2.jpg");
+    background-position: 100% bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+.content-resAbout .container,
+.content-resAbout-product .container,
+.content-resAbout-video.container {
     display: flex;
     flex-direction: row;
 }
 
-.content-resAbout .container .resAbout-img {
-    flex-basis: 50%;
-}
-
-.content-resAbout .container .resAbout-img img {
-    width: 100%;
-    height: 100%;
-    box-shadow: -2px 2px 10px 1px #222;
-}
-
-.content-resAbout .container .resAbout-text {
-    flex-basis: 50%;
+.content-resAbout .container .resAbout-text,
+.content-resAbout-product .container .resAbout-text {
     padding: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.content-resAbout-video .container .resAbout-text {
+    padding: 30px;
+    text-align: center;
+    margin: 50px auto 0 auto;
 }
 
 .resAbout-text h1 {
     margin: 20px 0 40px 0;
-    color: #222222;
+    color: #FFF;
+    font-size: 2em;
+    text-align: center;
 }
 
 .resAbout-text p {
-    text-align: right;
-    color: #3d3d3d;
+    color: #FFF;
+    font-size: 1.2em;
+    width: 70%;
+    height: 200px;
+    text-shadow: 1px 1px 1px #222;
+    margin: 0 auto;
+}
+
+.content-resAbout-product .resAbout-text h1 {
+    font-size: 3em;
+    height: 200px;
+    margin-top: 100px;
+    width: 600px;
+    text-shadow: 1px 1px 1px #222;
+}
+
+.content-resAbout-video .resAbout-text h1 {
+    font-size: 3em;
+    height: 200px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    width: 650px;
+    text-shadow: 1px 1px 1px #222;
+}
+
+.btn-play {
+    width: 100%;
+    height: 100%;
+    margin: 30px 0;
+}
+
+.btn-play a {
+    padding: 20px;
+    border-radius: 50px;
+    color: #FFF;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+.icon-play3:before {
+    margin-right: 0 !important;
+}
+
+.resAbout-text a.btn2 {
+    margin-top: 50px;
+}
+
+.cover-btn2 {
+    width: 100%;
+    text-align: center;
+}
+
+.btn2 {
+    background-color: #FFF;
+    padding: 15px;
+    border: 2px solid #145238;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 150px;
+    color: #000;
+}
+
+.btn2:hover {
+    background-color: #145238;
+    color: #FFF;
+    border: 2px solid #FFF;
+    padding: 16px 16px 15px 16px;
 }
 
 
@@ -709,7 +823,7 @@ form p {
 
 .content-certification {
     background-image: url("../imgs/banner/certificado.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: 100%;
     background-repeat: no-repeat;
     height: 500px;
@@ -833,8 +947,8 @@ footer .container .footer-logo img {
     header.header-products,
     header.header-home,
     header.header-company {
-        background-size: 100% 100%;
-        border-radius: 0 0 50px 50px;
+        background-size: cover;
+        background-position: bottom;
     }
     .box-carrosel {
         width: 90%;
@@ -909,7 +1023,7 @@ footer .container .footer-logo img {
         padding: 30px 2%;
     }
     .resAbout-text p {
-        text-align: left;
+        text-align: center;
     }
     .content-resAbout .container .resAbout-img {
         flex-basis: 100%;
@@ -1053,6 +1167,27 @@ footer .container .footer-logo img {
     .footer-sub p:nth-of-type(2) {
         margin-right: 0px !important;
         margin-top: 10px;
+    }
+    .content-resAbout-video .resAbout-text h1 {
+        width: 100%;
+    }
+    .content-resAbout-video .container .resAbout-text,
+    .content-resAbout-product .container .resAbout-text,
+    .content-resAbout .container .resAbout-text {
+        padding: 30px 0;
+    }
+    .content-resAbout-product .resAbout-text h1 {
+        width: 100%;
+    }
+    .resAbout-text p {
+        font-size: 1em;
+        width: 100%;
+        height: auto;
+        margin: 0 auto 50px auto;
+    }
+    .content-resAbout-product,
+    .content-resAbout {
+        background-position: 52% center;
     }
     /*520px*/
     @media (max-width: 33em) {
